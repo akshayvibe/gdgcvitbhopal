@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeroText.css";
+// import removed: styles are now in index.css
 
 import building from "@/assets/VitVectorImage.svg";
 import cloudLeft from "@/assets/Cloud_Elem_1.svg";
