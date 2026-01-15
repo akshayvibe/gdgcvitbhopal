@@ -1,10 +1,10 @@
 import React from "react";
-import HeroText from "@/Components/HeroText/HeroText.jsx";
+import HeroSection from "@/Components/HeroText/HeroSectionContainer.jsx";
 
 function Home() {
     return (
         <>
-          <HeroText />
+            <HeroSection />
         </>
     );
 }

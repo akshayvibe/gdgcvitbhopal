@@ -68,16 +68,13 @@ export default function HeroText() {
                 </a>
 
                 <div className="hero__cta">
-                    <Button className="hero__cta-button w-20 lg:w-45 h-11 px-8">
+                    <Button className="hero__cta-button w-45 h-11 px-8">
                         <ExternalLink color="white" />
                         <Link
                             to="/join"
-                            className="hidden lg:inline text-xl ml-2"
+                            className="inline text-xl ml-2"
                         >
                             Join Us 🚀
-                        </Link>
-                        <Link to="/join" className="inline lg:hidden text-sm">
-                            Join
                         </Link>
                     </Button>
                 </div>
