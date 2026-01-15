@@ -1,6 +1,5 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import "./App.css";
 
 import NavBar from "./Components/NavBar/NavBar";
 import Tech from "./pages/Tech";
@@ -9,7 +8,7 @@ import WebDTeam from "./pages/WebDTeam";
 
 function App() {
     return (
-        <div className="app-container">
+        <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 md:px-8 lg:px-12 box-border overflow-x-hidden">
             <NavBar />
             <main>
                 <Routes>

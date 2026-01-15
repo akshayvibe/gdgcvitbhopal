@@ -18,7 +18,7 @@ import { ExternalLink, MapPin } from "lucide-react";
 export default function HeroText() {
     return (
         <>
-            <section>
+            <section className="relative">
                 <img src={indigo} alt="" className="kite kite-left" />
                 <img src={airindia} alt="" className="kite kite-right" />
                 <img src={saturn} alt="" className="planet" />
@@ -35,8 +35,8 @@ export default function HeroText() {
                 ></div>
             </section>
 
-            <section className="hero" aria-label="Site hero">
-                <div className="hero__inner">
+            <section className="hero flex justify-center items-center text-center" aria-label="Site hero">
+                <div className="hero__inner w-full max-w-5xl mx-auto">
                     {/* <h1 className="hero__heading">
                         <span className="hero__we">we are</span>{" "}
                         <span className="hero__gdgc">gdgc</span>
