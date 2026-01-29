@@ -12,34 +12,34 @@ const ScrollLinkedSection = () => {
 
   const teamData = [
     {
-      name: "spiderman",
-      role: "BE with ironman",
-      image: "https://placehold.co/400x400",
-      vision: "Wannabe ironman"
+      name: "Anubhavi Jaiswal",
+      role: "GDG Organizer",
+      image: "/Panel_member1.jpeg",
+      vision: "As the Organizer of GDGC VIT Bhopal, it has been rewarding to build a vibrant technical community rooted in curiosity and collaboration. Through workshops, hackathons, and hands-on initiatives, we’ve empowered students to connect theory with real-world technology and grow as developers and leaders."
     },
     {
-      name: "Thanos",
-      role: "aubergine",
-      image: "https://placehold.co/400x400",
-      vision: "let it be"
+      name: "Akshay Kumar Mishra",
+      role: "Technical Lead",
+      image: "/Panel-member2.jpeg",
+      vision: "Being the Tech Lead at GDGC VIT Bhopal has been an incredibly rewarding experience. The community fosters innovation, collaboration, and continuous learning, giving students real opportunities to grow as developers and leaders. It’s inspiring to work with passionate peers and build impactful solutions together."
     },
     {
-      name: "Captain America",
-      role: "Serum guy",
-      image: "https://placehold.co/400x400",
-      vision: "Avengers Assemble!!!"
+      name: "Gagan Bhardwaj",
+      role: "Technical Co-lead",
+      image: "/Panel_member3.jpeg",
+      vision: "Had an amazing 2 years with GDGC, starting as a Web Team Member and growing into the role of Tech Co-Lead. Learned, shared, and collaborated with some truly like-minded people. Super grateful for the community, the growth, and the experiences. Excited to see what’s ahead! 🚀✨"
     },
     {
-      name: "IRON MAN",
-      role: "everything",
-      image: "https://placehold.co/400x400",
-      vision: "I AM IRON MAN"
+      name: "Priyansh Chaudhary",
+      role: "Non-Technical Lead",
+      image: "/Panel_member4.jpeg",
+      vision: "Being the Non-Tech Lead at GDG on Campus is about driving our vision forward with precision and accountability . It’s a thrill to lead such a talented team, pushing boundaries and reaching new heights together while keeping the vibes high. 🏎️"
     },
     {
-      name: "HUlk",
-      role: "BREAK STUFF",
-      image: "https://placehold.co/400x400",
-      vision: "Natasha kaha h yrr"
+      name: "Devanshi Sharma",
+      role: "Non-Technical Co-lead",
+      image: "/Panel_member5.jpeg",
+      vision: "I started my journey in this club as an Event Team Member and today proudly serve as the Non-Tech Co-Lead. Being academically driven, slightly introverted, and highly ambitious, I believe in growing through consistency, dedication, and meaningful contribution"
     }
   ];
 
