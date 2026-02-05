@@ -27,7 +27,7 @@ export function GlobalNavbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 p-4 font-montserrat flex justify-end"
+      className="fixed top-0 left-0 right-0 z-50 p-4 lg:p-6 lg:h-20 font-montserrat flex justify-end"
     >
       <div
         className="flex flex-row-reverse items-center gap-4"
@@ -36,8 +36,8 @@ export function GlobalNavbar() {
       >
         {/* Logo */}
         <motion.div
-          className="w-17 h-17 cursor-pointer flex items-center justify-center"
-          whileHover={{ scale: 1.5, rotate: 360 }}
+          className="w-17 h-17 md:w-20 md:h-20 lg:w-24 lg:h-24 cursor-pointer flex items-center justify-center"
+          whileHover={{ scale: 1.25, rotate: 360 }}
           transition={{ duration: 0.3, ease: 'linear',}}
           style={{
             filter: 'drop-shadow(0 0 10px rgba(232, 239, 211, 0.6)) drop-shadow(0 0 20px rgba(34, 197, 94, 0.4))',
