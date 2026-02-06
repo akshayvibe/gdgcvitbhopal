@@ -23,16 +23,16 @@ const ScrollLinkedSection = () => {
       name: "Akshay Kumar Mishra",
       role: "Technical Lead",
       image: "/Panel-member2.jpeg",
-      github: "#",
-      linkedin: "#",
+      github: " https://github.com/akshayvibe",
+      linkedin: " https://www.linkedin.com/in/itsakshay/",
       vision: "Being the Tech Lead at GDGC VIT Bhopal has been an incredibly rewarding experience. The community fosters innovation, collaboration, and continuous learning, giving students real opportunities to grow as developers and leaders. It’s inspiring to work with passionate peers and build impactful solutions together."
     },
     {
       name: "Gagan Bhardwaj",
       role: "Technical Co-lead",
       image: "/Panel_member3.jpeg",
-      github: "#",
-      linkedin: "#",
+      github:  "https://github.com/gagan771",
+      linkedin: "https://www.linkedin.com/in/gagan-bhardwaj-b8831a292",
       vision: "Had an amazing 2 years with GDGC, starting as a Web Team Member and growing into the role of Tech Co-Lead. Learned, shared, and collaborated with some truly like-minded people. Super grateful for the community, the growth, and the experiences. Excited to see what’s ahead! 🚀✨"
     },
     {
