@@ -1,0 +1,165 @@
+/* ===== BACKDROP ===== */
+.popup-backdrop{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:16px;
+  z-index:9999;
+}
+
+/* ===== POPUP WRAPPER ===== */
+.speech-wrapper{
+  position:relative;
+  background:#f5e9d8;
+  border-radius:18px;
+  box-shadow:0 30px 60px rgba(0,0,0,0.45);
+
+  /* Smaller outer card */
+  padding:10px 12px 12px 12px;
+
+  width:min(440px, 92vw);
+  max-height:90vh;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+/* ===== RED STAMP BORDER ===== */
+.speech-wrapper::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border:10px solid #c62828;
+  border-radius:18px;
+  pointer-events:none;
+}
+
+/* ===== INNER CONTENT ===== */
+.speech-card{
+  text-align:center;
+  color:#222;
+}
+
+/* ===== POSTER IMAGE ===== */
+.poster{
+  width:100%;
+  height:auto;
+
+  /* 🔥 Bigger image but still safe */
+  max-height:65vh;
+
+  object-fit:contain;
+  border-radius:6px;
+  margin-bottom:8px;
+  box-shadow:0 10px 22px rgba(0,0,0,0.35);
+}
+
+/* ===== PERFORATED STAMP EDGE ===== */
+.speech-wrapper::after{
+  border:none;
+}
+
+/* ===== CLOSE BUTTON ===== */
+.close-btn{
+  position:absolute;
+  top:10px;
+  right:12px;
+  border:none;
+  background:#c62828;
+  color:white;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:bold;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  z-index:2;
+}
+
+/* ===== TEXT ===== */
+.coming{
+  font-weight:700;
+  letter-spacing:2px;
+  font-size:15px;
+}
+
+.timer{
+  font-family:monospace;
+  font-size:13px;
+  margin-top:4px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width:480px){
+
+  .speech-wrapper{
+    width:94vw;
+    padding:10px;
+    border-radius:14px;
+  }
+
+  .speech-wrapper::before{
+    border-width:6px;
+  }
+
+  .poster{
+    max-height:45vh;
+  }
+
+  .coming{ font-size:13px; }
+  .timer{ font-size:12px; }
+
+  .close-btn{
+    width:26px;
+    height:26px;
+    font-size:13px;
+  }
+}
+/* Make poster area positioning reference */
+.speech-card{
+  position:relative;
+}
+
+/* Creative sticker-style registration button */
+.register-sticker{
+  position:absolute;
+  bottom:110px;
+  right:18px;
+  background:#ff3b3b;
+  color:white;
+  font-weight:700;
+  font-size:14px;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  transform:rotate(-12deg);
+  box-shadow:0 6px 15px rgba(0,0,0,0.25);
+  border:2px dashed rgba(255,255,255,0.6);
+  letter-spacing:1px;
+  z-index:5;
+}
+
+/* Hover effect */
+.register-sticker:hover{
+  transform:rotate(-12deg) scale(1.08);
+  box-shadow:0 10px 25px rgba(0,0,0,0.35);
+  background:#ff1f1f;
+}
+
+/* Mobile adjustment */
+@media (max-width:600px){
+  .register-sticker{
+    bottom:90px;
+    right:12px;
+    font-size:12px;
+    padding:8px 12px;
+  }
+}
+
+
