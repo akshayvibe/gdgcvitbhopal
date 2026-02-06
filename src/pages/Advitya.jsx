@@ -4,6 +4,7 @@ import ParallaxBackground from "@/Advitya26Components/ParallaxBackground";
 import CardMainSection from "@/Advitya26Components/CardAnimation/CardMainSection";
 import AboutCard from "@/Advitya26Components/AboutCard";
 import ChoosePathCard from "@/Advitya26Components/ChoosePathCard";
+import Test from "@/Advitya26Components/Test";
 
 import "@/Advitya26Components/AdvityaMain.css";
 
@@ -23,15 +24,24 @@ function Advitya() {
                 <GlobalNavbar />
             </div>
             <ParallaxBackground />
-            <div className="relative z-10" style={{ marginTop: '-100vh' }}>
+            
+            <div className="relative z-10" style={{ marginTop: "-100vh" }}>
                 {/* Space paralax background */}
-                <div style={{ height: '100vh' }} /> 
-                <CardMainSection bgColor="transparent" cardSize="2xl">
+                <div style={{ height: "100vh" }} />
+                <CardMainSection
+                    bgColor="transparent"
+                    cardSize="2xl"
+                    direction="horizontal"
+                >
                     <AboutCard />
                     <ChoosePathCard />
                 </CardMainSection>
+                
+                <section className="relative w-full bg-white">
+                    <Test />
+                </section>
             </div>
-        </> 
+        </>
     );
 }
 

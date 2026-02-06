@@ -10,8 +10,8 @@ const FallingImagesBackground = ({
   imageHeight = 80,
   bounce = 0.5,
   rotation = true,
-  bottomDepth = 300,
-  hoverForce = 8, 
+  bottomDepth = 0,
+  hoverForce = 8,
 }) => {
   const containerRef = useRef(null)
   const [effectStarted, setEffectStarted] = useState(false)
@@ -51,7 +51,7 @@ const FallingImagesBackground = ({
       }
       return
     }
-    
+
     if (trigger === "scroll" && containerRef.current) {
       const observer = new IntersectionObserver(
         ([entry]) => {
@@ -117,7 +117,7 @@ const FallingImagesBackground = ({
       const deltaTime = (currentTime - lastTime) / 16.67
       lastTime = currentTime
 
-      setFallingImages(prevImages => 
+      setFallingImages(prevImages =>
         prevImages.map(img => {
           let newX = img.x + img.vx * deltaTime
           let newY = img.y + img.vy * deltaTime
@@ -129,7 +129,7 @@ const FallingImagesBackground = ({
           const dx = mousePositionRef.current.x - img.x
           const dy = mousePositionRef.current.y - img.y
           const distance = Math.sqrt(dx * dx + dy * dy)
-          const hoverRadius = 120 
+          const hoverRadius = 120
 
           if (distance < hoverRadius && distance > 0) {
             const force = (hoverRadius - distance) / hoverRadius * hoverForce
@@ -139,44 +139,45 @@ const FallingImagesBackground = ({
             newRotationSpeed += (Math.random() - 0.5) * 2
           }
 
-       
+
           newVx *= 0.998
           newVy *= 0.999
 
-      
-          const bottomLimit = height + bottomDepth
-          if (newY + imageHeight / 2 >= bottomLimit - 10) {
-            newY = bottomLimit - imageHeight / 2 - 10
+
+          // Keep images fully visible - use full imageHeight as margin from bottom
+          const bottomLimit = height - imageHeight - 20
+          if (newY >= bottomLimit) {
+            newY = bottomLimit
             newVy = Math.abs(newVy) * -bounce
             newVx *= 0.85
             newRotationSpeed *= bounce
-            
+
             if (Math.abs(newVy) < 0.3) {
               newVy = 0
-              newY = bottomLimit - imageHeight / 2 - 10
+              newY = bottomLimit
             }
           }
 
-        
+
           if (newY - imageHeight / 2 <= 0) {
             newY = imageHeight / 2
             newVy = Math.abs(newVy) * bounce
           }
 
-        
+
           if (newX - imageWidth / 2 <= 0) {
             newX = imageWidth / 2
             newVx = Math.abs(newVx) * bounce
           }
 
-         
+
           if (newX + imageWidth / 2 >= width) {
             newX = width - imageWidth / 2
             newVx = Math.abs(newVx) * -bounce
           }
 
-        
-          if (Math.abs(newY - (bottomLimit - imageHeight / 2 - 10)) < 1) {
+
+          if (Math.abs(newY - bottomLimit) < 1) {
             newVx *= 0.96
             newRotationSpeed *= 0.96
           }
@@ -226,8 +227,8 @@ const FallingImagesBackground = ({
       tabIndex={trigger === "click" ? 0 : undefined}
       style={{ backgroundColor, overflow: 'hidden' }}
     >
-      
-      <div 
+
+      <div
         className="absolute z-0"
         style={{
           top: 0,
@@ -260,7 +261,7 @@ const FallingImagesBackground = ({
         ))}
       </div>
 
-      
+
       <div className="relative z-10 w-full h-full pointer-events-none">
         {children}
       </div>
