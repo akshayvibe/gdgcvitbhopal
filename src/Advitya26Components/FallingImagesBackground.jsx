@@ -11,7 +11,7 @@ const FallingImagesBackground = ({
   bounce = 0.5,
   rotation = true,
   bottomDepth = 300,
-  hoverForce = 8, // Strength of push when hovering
+  hoverForce = 8, 
 }) => {
   const containerRef = useRef(null)
   const [effectStarted, setEffectStarted] = useState(false)
@@ -22,7 +22,6 @@ const FallingImagesBackground = ({
 
   const uniqueImages = useRef(images).current
 
-  // Preload images
   useEffect(() => {
     let loadedCount = 0
     const totalImages = uniqueImages.length
@@ -45,7 +44,6 @@ const FallingImagesBackground = ({
     })
   }, [uniqueImages])
 
-  // Scroll trigger
   useEffect(() => {
     if (trigger === "auto") {
       if (imagesLoaded) {
@@ -69,7 +67,6 @@ const FallingImagesBackground = ({
     }
   }, [trigger, imagesLoaded])
 
-  // Track mouse position
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!containerRef.current) return
@@ -91,7 +88,7 @@ const FallingImagesBackground = ({
     const width = containerRect.width
     const height = containerRect.height
 
-    // Start all images clustered at center top
+
     const centerX = width / 2
     const centerY = -250
 
@@ -106,12 +103,7 @@ const FallingImagesBackground = ({
       const vy = Math.sin(angle) * speed * 0.4
 
       return {
-        id: index,
-        src,
-        x,
-        y,
-        vx,
-        vy,
+        id: index,src,x,y,vx, vy,
         rotation: Math.random() * 360,
         rotationSpeed: (Math.random() - 0.5) * 5,
       }
@@ -134,13 +126,11 @@ const FallingImagesBackground = ({
           let newRotation = rotation ? img.rotation + img.rotationSpeed * deltaTime : 0
           let newRotationSpeed = img.rotationSpeed
 
-          // Calculate distance from mouse to image
           const dx = mousePositionRef.current.x - img.x
           const dy = mousePositionRef.current.y - img.y
           const distance = Math.sqrt(dx * dx + dy * dy)
-          const hoverRadius = 120 // Radius around cursor that affects images
+          const hoverRadius = 120 
 
-          // If mouse is near the image, push it away
           if (distance < hoverRadius && distance > 0) {
             const force = (hoverRadius - distance) / hoverRadius * hoverForce
             const angle = Math.atan2(dy, dx)
@@ -149,11 +139,11 @@ const FallingImagesBackground = ({
             newRotationSpeed += (Math.random() - 0.5) * 2
           }
 
-          // Air resistance
+       
           newVx *= 0.998
           newVy *= 0.999
 
-          // Bottom boundary
+      
           const bottomLimit = height + bottomDepth
           if (newY + imageHeight / 2 >= bottomLimit - 10) {
             newY = bottomLimit - imageHeight / 2 - 10
@@ -167,25 +157,25 @@ const FallingImagesBackground = ({
             }
           }
 
-          // Top boundary
+        
           if (newY - imageHeight / 2 <= 0) {
             newY = imageHeight / 2
             newVy = Math.abs(newVy) * bounce
           }
 
-          // Left boundary
+        
           if (newX - imageWidth / 2 <= 0) {
             newX = imageWidth / 2
             newVx = Math.abs(newVx) * bounce
           }
 
-          // Right boundary
+         
           if (newX + imageWidth / 2 >= width) {
             newX = width - imageWidth / 2
             newVx = Math.abs(newVx) * -bounce
           }
 
-          // Friction when settled
+        
           if (Math.abs(newY - (bottomLimit - imageHeight / 2 - 10)) < 1) {
             newVx *= 0.96
             newRotationSpeed *= 0.96
@@ -236,7 +226,7 @@ const FallingImagesBackground = ({
       tabIndex={trigger === "click" ? 0 : undefined}
       style={{ backgroundColor, overflow: 'hidden' }}
     >
-      {/* Falling images layer */}
+      
       <div 
         className="absolute z-0"
         style={{
@@ -270,7 +260,7 @@ const FallingImagesBackground = ({
         ))}
       </div>
 
-      {/* Content layer */}
+      
       <div className="relative z-10 w-full h-full pointer-events-none">
         {children}
       </div>
