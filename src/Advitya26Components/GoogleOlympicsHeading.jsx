@@ -52,13 +52,13 @@ const GoogleOlympicsHeading = ({ show = false, className = '' }) => {
             animate={show ? 'visible' : 'hidden'}
         >
             {/* First line: Google Olympics */}
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center px-1 sm:px-2 md:px-0">
                 {heading.split('').map((letter, index) => {
                     if (letter === ' ') {
                         return (
                             <span
                                 key={index}
-                                className="inline-block w-4 md:w-6 lg:w-8"
+                                className="inline-block w-2 sm:w-4 md:w-6 lg:w-8"
                                 aria-hidden="true"
                             />
                         );
@@ -67,13 +67,12 @@ const GoogleOlympicsHeading = ({ show = false, className = '' }) => {
                         <motion.span
                             key={index}
                             variants={letterVariants}
-                            className="inline-block"
+                            className="inline-block text-[2.3rem] xs:text-[2.7rem] sm:text-[3.5rem] md:text-[5rem] lg:text-[7rem] xl:text-[8rem]"
                             style={{
-                                    fontFamily: 'Fredericka the Great, cursive',
+                                fontFamily: 'Fredericka the Great, cursive',
                                 color: getLetterColor(index),
-                                letterSpacing: '0.2em',
+                                letterSpacing: '0.08em',
                                 textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3)',
-                                fontSize: 'clamp(4rem, 8vw, 6rem)',
                                 lineHeight: 1.1,
                                 fontWeight: 800,
                             }}
@@ -84,17 +83,17 @@ const GoogleOlympicsHeading = ({ show = false, className = '' }) => {
                 })}
             </div>
             {/* Second line: 2.0 */}
-            <div className="w-full flex justify-center mt-2">
+            <div className="w-full flex justify-center mt-2 px-1 sm:px-2 md:px-0">
                 <motion.span
                     initial={{ opacity: 0, y: 20 }}
                     animate={show ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ type: 'tween', duration: 0.5, delay: 0.2 }}
+                    className="text-[1.4rem] xs:text-[1.8rem] sm:text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem]"
                     style={{
-                            fontFamily: 'Fredericka the Great, cursive',
+                        fontFamily: 'Fredericka the Great, cursive',
                         color: '#030c0f',
-                        fontSize: 'clamp(3.5rem, 7vw, 5.5rem)',
                         fontWeight: 900,
-                        letterSpacing: '0.1em',
+                        letterSpacing: '0.06em',
                         textShadow: '2px 2px 4px rgba(22, 6, 6, 0.3), 0 0 8px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3)',
                         lineHeight: 1.1,
                     }}
