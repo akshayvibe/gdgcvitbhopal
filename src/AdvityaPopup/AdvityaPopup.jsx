@@ -49,7 +49,7 @@ export default function AdvityaPopup({
             <button className="close-btn" onClick={onClose}>✕</button>
 
             <div className="stamp-core">
-              <img src="/AdvityaPopup.png" alt="poster" />
+              <img src="/AdvityaPopup.avif" alt="poster" />
             </div>
           </div>
 
