@@ -72,7 +72,7 @@ function Advitya() {
                     >
                         <AboutCard />
                         <LoadingTextScroller />
-                        <ChoosePathCardMobile id="games-section" />
+                        <ChoosePathCardMobile />
                     </CardMainSection>
                 ) : (
                     <CardMainSectionDesktop
@@ -83,7 +83,7 @@ function Advitya() {
                     >
                         <AboutCard />
                         <LoadingTextScroller />
-                        <ChoosePathCard id="games-section" />
+                        <ChoosePathCard />
                     </CardMainSectionDesktop>
                 )}
 
