@@ -116,6 +116,13 @@ const blockchainDomain = {
                 linkedin: "https://www.linkedin.com/in/krishna-barot-75580b375",
                 github: "https://github.com/barotkrishna1702",
             },
+             {
+                name: "Yadnyesh Patil ",
+                role: "Core Member",
+                avatar: "/Domainimages/TechDomainimages/Blockchainmembersimages/YADNYESH PRAKASH PATIL 24BAI10584.jpg",
+                linkedin: "https://www.linkedin.com/in/yadnyeshp?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                github: "https://github.com/Yadnyesh-patil",
+            },
              
         ],
     },

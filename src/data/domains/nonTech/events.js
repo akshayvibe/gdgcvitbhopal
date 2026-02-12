@@ -82,15 +82,15 @@ const eventsDomain = {
     ],
     team: {
         lead: {
-            name: "Shlok Rajesh Dhanokar",
-            role: "Event Management Co-Lead",
-            avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/professional shlok - Shlok Rajesh Dhanokar 23bai10289.png",
+            name: "Jalaj Srivastava",
+            role: "Event Management Lead",
+            avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/JALAJ SRIVASTAVA 24BCE10130.jpg",
             bio: "Expert in organizing large-scale tech events and community gatherings.",
-            linkedin: "https://www.linkedin.com/in/shlokdhanokar/",
-            github: "https://github.com/shlokdhanokar",
+            linkedin: "http://www.linkedin.com/in/jalaj-srivastava",
+            github: "https://github.com/srivastavaaaa",
             email: "",
         },
-        coLead: {
+        coLead:{
             name: "Pragati Rai",
             role: "Events Co-Lead",
             avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/PRAGATI RAI 24BCY10123.jpg",
@@ -99,22 +99,23 @@ const eventsDomain = {
             github: "",
             email: "",
         },
+       
         members: [
             {
-                name: "Nandini Lodha",
+                name: "Srashti Tomar",
                 role: "Core Member",
-                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/NANDINI LODHA 24BCE11092.jpeg",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/SRASHTI TOMAR 25BAI11169.jpeg",
                 linkedin:
                     "https://www.linkedin.com/in/nandini-lodha-505185249/",
                 github: "https://github.com/nandinicodess",
             },
             {
-                name: "Abhijeet Patil",
+                name: "Zaara Parween",
                 role: "Core Member",
-                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/ABHIJEET BALAJI PATIL 24BCE10110.jpg",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/Placeholder.jpg",
                 linkedin:
-                    "https://www.linkedin.com/in/abhijeet-patil-247677330",
-                github: "https://github.com/PATIL-ABHIJEET",
+                    "",
+                github: "",
             },
             {
                 name: "Ananya Rajesh Pandey",
@@ -124,10 +125,10 @@ const eventsDomain = {
                 github: "",
             },
             {
-                name: "Aaryan Nampoothiri A",
+                name: " Nandini Lodha",
                 role: "Core Member",
-                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/AARYAN NAMPOOTHIRI A 24MEI10080.jpg",
-                linkedin: "https://www.linkedin.com/in/aaryannampoothiri",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/NANDINI LODHA 24BCE11092.jpeg",
+                linkedin: "",
                 github: "",
             },
             {
@@ -139,18 +140,64 @@ const eventsDomain = {
                 github: "",
             },
             {
-                name: "Srashti Tomar",
+                name: "Aaryan Nampoothiri A",
                 role: "Core Member",
-                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/SRASHTI TOMAR 25BAI11169.jpeg",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/AARYAN NAMPOOTHIRI A 24MEI10080.jpg",
                 linkedin: "",
                 github: "",
             },
             {
+                name: "Naman Agrawal ",
+                role: "Core Member",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/Placeholder.jpg",
+                linkedin:
+                    "",
+                github: "",
+            },
+             {
+                name: "Abhijeet Patil",
+                role: "Core Member",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/ABHIJEET BALAJI PATIL 24BCE10110.jpg",
+                linkedin:
+                    "https://www.linkedin.com/in/abhijeet-patil-247677330",
+                github: "https://github.com/PATIL-ABHIJEET",
+            },
+             {
                 name: "Yaduveer Singh Chundawat",
                 role: "Core Member",
                 avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/YADUVEER SINGH CHUNDAWAT 24BCE11191.png",
                 linkedin:
                     "https://www.linkedin.com/in/yaduveer-singh-chundawat-547855328",
+                github: "",
+            },
+             {
+                name: "Kushagra Srivastava",
+                role: "Core Member",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/Placeholder.jpg",
+                linkedin: "",
+                github: "",
+            },
+             {
+                name: "Vansh Upreti",
+                role: "Core Member",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/Placeholder.jpg",
+                linkedin:"",
+                github: "",
+            },
+             {
+                name: "Yash Vardhan Ruia",
+                role: "Core Member",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/Placeholder.jpg",
+                linkedin:
+                  "",
+                github: "",
+            },
+             {
+                name: "Vishu Kumar Singh ",
+                role: "Core Member",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/Placeholder.jpg",
+                linkedin:
+                    "",
                 github: "",
             },
         ],
