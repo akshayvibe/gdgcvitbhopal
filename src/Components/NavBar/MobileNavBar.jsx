@@ -269,7 +269,7 @@ function MobileNavBar() {
 
                     <div className="relative z-10 p-4">
                         <Link
-                            to="/join"
+                            to="https://gdg.community.dev/gdg-on-campus-vellore-institute-of-technology-bhopal-india/"
                             onClick={closeMenu}
                             className="block w-full rounded-md bg-blue-500 px-4 py-3 text-center font-semibold text-white"
                         >
