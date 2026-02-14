@@ -254,7 +254,7 @@ function MobileNavBar() {
                             Contact
                         </MobileNavLink>
                         <MobileNavLink to="/advitya" onNavigate={closeMenu}>
-                            Advitya
+                            <img src="/olympicsImages/advitya.png" alt="Advitya" className="w-[18vw] h-[3vh]" />
                         </MobileNavLink>
                         <MobileNavLink to="/about" onNavigate={closeMenu}>
                             About
