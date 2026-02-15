@@ -141,7 +141,7 @@ const AsteriskIcon = ({ color }) => {
 };
 
 const FAQCard = ({ question, answer, iconColor }) => (
-  <div className="border border-black/100 rounded-lg p-3 md:p-6 flex items-center gap-4 md:gap-8 bg-transparent hover:bg-black/5 transition-colors w-full max-w-10xl" style={{ fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif" }}>
+  <div className="border border-black/100 rounded-lg p-3 md:p-6 flex items-center gap-4 md:gap-8 bg-black/15 transition-colors w-full max-w-10xl" style={{ fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif" }}>
     <div className="flex-shrink-0">
       <AsteriskIcon color={iconColor} />
     </div>
@@ -183,7 +183,7 @@ export default function FAQ() {
       <div
         className="absolute inset-0 z-10"
         style={{
-          background: 'rgba(106, 96, 48, 0.45)',
+          background: 'rgba(240, 219, 114, 0.45)',
           backdropFilter: 'blur(1px)',
           WebkitBackdropFilter: 'blur(1px)',
         }}
