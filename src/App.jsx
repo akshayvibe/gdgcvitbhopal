@@ -6,6 +6,7 @@ import Footer from "./Components/Footer/Footer";
 import { useScrollContext } from "./context/ScrollContext";
 import AdvityaPopup from "./AdvityaPopup/AdvityaPopup";
 import DinoFollower from "./Components/DinoFollower";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -31,6 +32,7 @@ function App() {
       <div ref={footerRef} id="footer">
         <Footer />
       </div>
+      <Analytics />
     </>
   );
 }
